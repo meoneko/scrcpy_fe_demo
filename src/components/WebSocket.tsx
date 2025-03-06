@@ -11,7 +11,7 @@ import { ScrcpyState } from "../services/state";
 
 console.log(WebCodecsVideoDecoder.isSupported);
 
-const urlDevices = 'ws://localhost:8080/devices';
+const urlDevices = 'ws://155.138.229.75:8080/devices';
 const ws = new WebSocket(urlDevices);
 
 ws.onopen = () => console.log('Connected to WebSocket');

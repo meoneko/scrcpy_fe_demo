@@ -45,7 +45,7 @@ export function createVideoFrameRenderer(): {
 
 export async function pushServerAsync(adb: Adb): Promise<boolean> {
   const sync = await adb.sync();
-  const response = await fetch('http://localhost:5173/scrcpy-server.jar');
+  const response = await fetch('http://155.138.229.75/scrcpy-server.jar');
 
   try {
     await sync.write({

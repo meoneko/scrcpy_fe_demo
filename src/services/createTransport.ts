@@ -7,7 +7,7 @@ export async function createTransportAsync(
   serverPort: number,
   serial: string,
 ): Promise<BaseResponse<WebSocketTransport>> {
-  const response = await fetch(`https://${serverIp}:${serverPort}/device/${serial}`);
+  const response = await fetch(`http://155.138.229.75:8080/device/${serial}`);
   if (!response.ok) {
     return {
       success: false,
